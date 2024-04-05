@@ -7,17 +7,16 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-      <bean name="employee" class="org.zenith.spring.springcore.primitive.Employee">
-          <property name="name" value="Modi ji" />
-          <property name="id">
-              <value>INF12221</value>
-          </property>
+    <bean name="hospital" class="org.zenith.spring.springcore.datadependecies.list.Hospital" p:hospitalName="Global Hospital">
+        <property name="departments">
+            <list>
+                <value>Cardiology</value>
+                <value>Orthology</value>
+                <value>Gynochologist</value>
+            </list>
 
-      </bean>
-
-<!--   USING P SCHEMA
-
-   <bean name="employee" class="org.zenith.spring.springcore.primitive.Employee" p:name="Rohan" p:id="WP123" />-->
+        </property>
+    </bean>
 
 
 </beans>

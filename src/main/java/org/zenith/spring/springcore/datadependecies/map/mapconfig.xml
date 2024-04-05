@@ -7,17 +7,18 @@
     http://www.springframework.org/schema/context
     http://www.springframework.org/schema/context/spring-context.xsd">
 
-      <bean name="employee" class="org.zenith.spring.springcore.primitive.Employee">
-          <property name="name" value="Modi ji" />
-          <property name="id">
-              <value>INF12221</value>
-          </property>
+   <bean name="school" class="org.zenith.spring.springcore.datadependecies.map.School" p:schoolName="DPS delhi">
+       <property name="studentRegistered">
+           <map>
+               <entry key="5" value="50" />
+               <entry key="6" value="53" />
+               <entry key="7" value="30" />
+               <entry key="8" value="33" />
+           </map>
 
-      </bean>
+       </property>
+   </bean>
 
-<!--   USING P SCHEMA
-
-   <bean name="employee" class="org.zenith.spring.springcore.primitive.Employee" p:name="Rohan" p:id="WP123" />-->
 
 
 </beans>
