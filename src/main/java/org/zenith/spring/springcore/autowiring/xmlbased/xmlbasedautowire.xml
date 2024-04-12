@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+<bean name="address" class="org.zenith.spring.springcore.autowiring.xmlbased.Address"  p:city="pune" p:streetno="12 fc road" p:pincode="234325"/>
+
+    <bean name="employee" class="org.zenith.spring.springcore.autowiring.xmlbased.Employee" />
+
+</beans>
